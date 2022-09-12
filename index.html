@@ -8,21 +8,22 @@
     <script src="https://kit.fontawesome.com/805792d749.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/normalize.css">
     <title>Projet Booki</title>
 </head>
 <body>
-        <div class="Header">
+        <div class="header">
             <img src="./images/Booki.png" alt="Logo Booki">
-            <div class="Navigation">
+            <div class="navigation">
                     <a href="#">Activités</a>
                     <a href="#">Hébergements</a>
             </div>
         </div>
             
             <section>
-                <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
-                <p><span>En plein centre ville ou en pleine nature</span></p>
+                <h1 class="main_title">Trouvez votre hébergement pour des vacances de rêve</h1>
+                <p class="subtitle"><span>En plein centre ville ou en pleine nature</span></p>
                     <div class="search-box">
                         <div class="size-icons"><i class="fa-solid fa-location-dot"></i></div>
                         <div><input type="search" placeholder="Marseille , France"/></div>
@@ -32,30 +33,106 @@
                     </div>
             </section>
 
-    <div class="Main_cards">
-            <main class="Hebergements">
-                <h3>Hébergements à Marseille</h3>
-                    <div class="Carte_hebergement">1</div>
-                    <div class="Carte_hebergement">2</div>
-                    <div class="Carte_hebergement">3</div>
-                    <div class="Carte_hebergement">4</div>
-                    <div class="Carte_hebergement">5</div>
-                    <div class="Carte_hebergement">6</div>
+            <section class="filter">
+                <h2 class="filter h2">Filtres</h2>
+                    <ul>
+                        <li><i class="blue-icon fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
+                        <li><i class="blue-icon fas fa-child"></i><a href="#">Familial</a></li>
+                        <li><i class="blue-icon fas fa-heart"></i><a href="#">Romantique</a></li>
+                        <li><i class="blue-icon fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
+                    </ul>  
+                </section>
+                        
+                <div class="info">
+                    <i class="fas fa-info"></i>
+                    <p>Plus de 500 logements sont disponibles dans cette ville </p> 
+                </div>
+
+    <div class="main_cards">
+            <main class="hebergements">
+                <h2>Hébergements à Marseille</h2>
+                    <div class="carte_hebergement">1</div>
+                    <div class="carte_hebergement">2</div>
+                    <div class="carte_hebergement">3</div>
+                    <div class="carte_hebergement">4</div>
+                    <div class="carte_hebergement">5</div>
+                    <div class="carte_hebergement">6</div>
+                <a class="afficher_plus" href="#">Afficher plus</a>
             </main>
         
-            <aside class="Populaires">
-                <h3>Les plus populaires</h3>
-                <div class="Carte_populaire">1</div>
-                <div class="Carte_populaire">2</div>
-                <div class="Carte_populaire">3</div>
+            <aside class="populaires">
+                <h2>Les plus populaires</h2>
+                <div class="carte_populaire">1</div>
+                <div class="carte_populaire">2</div>
+                <div class="carte_populaire">3</div>
             </aside>
     </div>
-    <div class="Activités">
-        <h3>Activités à Marseille</h3>
-    </div>      
+
+    <section class="activites"> 
+        <h2>Activités à Marseille</h2>
+            <div class="carte_activites">
+                <article class="carte_one">
+                    <a href="#">
+                        <figure class="one_image">
+                            <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
+                                <h3>Vieux Port</h3>
+                        </figure>  
+                    </a>
+        </article>
+
+        <div class=carte_groupe>
+            <article class=carte_groupe_1>
+                <a href="#">
+                    <figure>
+                        <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
+                        <h3>Fort de Pomègues</h3>
+                    </figure>  
+                </a>
+            </article>
+
+            <article class=carte_groupe_2>
+                <a href="#">
+                    <figure>
+                        <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul"/>
+                        <h3>Îles du Frioul</h3>
+                    </figure>  
+                </a>
+            </article>
+        </div>
+
+        <article class="carte_one">
+            <a href="#">
+                <figure class="one_image">
+                    <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques"/>
+                    <h3>Parc national des Calanques</h3>
+                </figure>  
+            </a>
+        </article>
+
+        <div class=carte_groupe>
+            <article class=carte_groupe_3>
+                <a href="#">
+                    <figure>
+                        <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
+                        <h3>Notre-Dame-de-la-Garde</h3>
+                    </figure>  
+                </a>
+            </article>
+
+            <article class=carte_groupe_4>
+                <a href="#">
+                    <figure>
+                        <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps"/>
+                        <h3>Parc Longchamp</h3>
+                    </figure>  
+                </a>
+            </article>
+        </div>
+</div>
+</section>  
 
     <footer>
-        <div class="Footer">
+        <div class="footer">
             <div class="liste-footer">
                <h4>A propos</h4>
                <ul>
