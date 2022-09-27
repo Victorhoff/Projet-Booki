@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/805792d749.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,6 +15,7 @@
     <title>Projet Booki</title>
 </head>
 <body>
+    <div class="container">
         <div class="header">
             <div class="logo"><img src="./images/Booki.png" alt="Logo Booki"></div>
             <nav class="navigation">
@@ -26,18 +29,18 @@
                 <p class="sous_titre"><span>En plein centre ville ou en pleine nature</span></p>
                     <div class="barre_recherche">
                         <div class="icones"><i class="fa-solid fa-location-dot"></i></div>
-                        <div><input type="search" value="Marseille, France"/></div>
-                        <button><span>Rechercher</span></button>
+                        <input type="search" value="Marseille, France"/>
+                        <button><span>Rechercher</span><i class="fa-solid fa-magnifying-glass"></i></button>
                     </div>
             </section>
 
             <div class="filtre">
                 <h2 class="filtre h2">Filtres</h2>
                     <ul>
-                        <li><i class="blue-icon fas fa-money-bill-wave"></i><a href="#">Économique</a></li>
-                        <li><i class="blue-icon fas fa-solid fa-child-reaching"></i><a href="#">Familial</a></li>
-                        <li><i class="blue-icon fas fa-heart"></i><a href="#">Romantique</a></li>
-                        <li><i class="blue-icon fas fa-dog"></i><a href="#">Animaux autorisés</a></li>
+                        <li class="liste_filtre"><i class="blue-icon fas fa-money-bill-wave"></i>Économique</li>
+                        <li class="liste_filtre"><i class="blue-icon fas fa-solid fa-child-reaching"></i>Familial</li>
+                        <li class="liste_filtre"><i class="blue-icon fas fa-heart"></i>Romantique</li>
+                        <li class="liste_filtre"><i class="blue-icon fas fa-dog"></i>Animaux autorisés</li>
                     </ul>  
             </div>
 
@@ -50,8 +53,8 @@
 
                     <!-- HEBERGEMENTS A MARSEILLE-->
 
-                <section id="page-accommodation">
-                    <main class="hebergements">  
+                <main class="page-accommodation">
+                    <section class="hebergements">  
                         <h2>Hébergements à Marseille</h2>
                         <div class="carte_hebergements">
                             <article class="carte_hebergements_hotel">
@@ -158,7 +161,7 @@
             
                         </div>
                         <a class="afficher_plus" href="#">Afficher plus</a>
-                    </main>
+                    </section>
                     
                     <!-- LES PLUS POPULAIRES -->
 
@@ -219,7 +222,7 @@
                             </article>
                         </div>  
                     </aside>
-                </section> 
+                </main> 
 
                     <!--ACTIVITES A MARSEILLE-->
 
@@ -228,7 +231,7 @@
             <div class="carte_activites">
                 <article class="carte_one">
                     <a href="#">
-                        <div class="one_image">
+                        <div class="container_image">
                             <img src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux Port"/>
                                 <h3>Vieux Port</h3>
                         </div>  
@@ -238,7 +241,7 @@
         <div class=carte_groupe>
             <article class=carte_groupe_1>
                 <a href="#">
-                    <div>
+                    <div class="container_image">
                         <img src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues"/>
                         <h3>Fort de Pomègues</h3>
                     </div>  
@@ -247,7 +250,7 @@
 
             <article class=carte_groupe_2>
                 <a href="#">
-                    <div>
+                    <div class="container_image">
                         <img src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Île du Frioul"/>
                         <h3>Îles du Frioul</h3>
                     </div>  
@@ -257,7 +260,7 @@
 
         <article class="carte_one">
             <a href="#">
-                <div class="one_image">
+                <div class="container_image">
                     <img src="images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Parc national des Calanques"/>
                     <h3>Parc national des Calanques</h3>
                 </div>  
@@ -266,11 +269,8 @@
 
         <div class=carte_groupe>
             <article class=carte_groupe_3>
-
-
-                
                 <a href="#">
-                    <div>
+                    <div class="container_image">
                         <img src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre-Dame-de-la-Garde"/>
                         <h3>Notre-Dame-de-la-Garde</h3>
                     </div>  
@@ -279,7 +279,7 @@
 
             <article class=carte_groupe_4>
                 <a href="#">
-                    <div>
+                    <div class="container_image">
                         <img src="images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamps"/>
                         <h3>Parc Longchamp</h3>
                     </div>  
@@ -320,6 +320,7 @@
             </div>   
         </div>  
     </footer>
+</div>
 
     
 </body>
