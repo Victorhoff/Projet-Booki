@@ -120,7 +120,6 @@ a {
 /* FILTRES */
 .filtre {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     gap: 10px;
 }
@@ -133,8 +132,9 @@ a {
 
 .filtre ul {
     display: flex;
-    flex-wrap: wrap; 
-    gap: 17px;
+    flex-wrap: wrap;
+    width: 70%;
+    padding-left: 20px;
 }
 
 .filtre li {
@@ -144,8 +144,17 @@ a {
     border-radius: 100px;
     border-left: #DEEBFF;
     cursor: pointer;
-    padding-right: 2%;
-    padding-left: 2%;
+}
+
+.liste_filtre {
+    height: 45px;
+    margin-top: 10px;
+    margin-right: 15px;
+}
+
+.liste_filtre p {
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .filtre a {
@@ -170,7 +179,7 @@ a {
     text-align: center;
     line-height: 3 !important;
     position: relative;
-    right: 12px;
+    right: 0px;
 }
 
 
@@ -216,6 +225,8 @@ a {
 
 h2 {
     margin-left: 5%;
+    margin-top: 5%;
+    margin-bottom: 0;
 }
 
 .carte_hebergements {
@@ -264,7 +275,9 @@ h3 {
 }
 
  .carte_one:hover,.carte_groupe_1:hover,.carte_groupe_2:hover,.carte_groupe_3:hover,.carte_groupe_4:hover,.carte_hebergements_hotel:hover,.carte_populaires_hotel:hover {
-    transform: scale(1.03); 
+    transform: scale(1.03);
+    transition: 0.3s;
+    box-shadow: 2px 2px 10px #0065fc;
  }
 
 .info_hebergements p, .info_populaires p {
@@ -307,6 +320,7 @@ h3 {
 .populaires h2 {
     display: flex;
     justify-content: space-around;
+    margin-top: 10%;
 }
 
 .carte_populaires {
@@ -386,6 +400,7 @@ h3 {
 
 .carte_activites img {
    width: 100%;
+   object-fit: cover;
    border-radius: 25px 25px 0px 0px;
    box-shadow: 1px 1px 10px #dfdfdf;
 }
@@ -420,15 +435,15 @@ h3 {
 }
 
 .carte_groupe_2 img {
-   height: 100px;
+   height: 120px;
 }
 
 .carte_groupe_3 img {
-   height: 130px;
+   height: 140px;
 }
 
 .carte_groupe_4 img {
-   height: 140px;
+   height: 160px;
 }
 
 /* FOOTER */
@@ -545,6 +560,7 @@ footer a {
    .filtre {
     margin: auto;
     width: 95%;
+    display: block;
    }
 
    .filtre ul {
@@ -586,6 +602,7 @@ footer a {
     display: flex;
     justify-content: space-between;
     margin-right: 10%;
+    margin-top: 5%;
    }
 
    .carte_populaires {
@@ -719,6 +736,10 @@ footer a {
         justify-content: space-between;
     }
 
+    .hebergements h2 {
+        margin-bottom: 5%;
+    }
+
     .carte_hebergements {
         padding: 0;
         margin: 0;
@@ -748,11 +769,11 @@ footer a {
     }
 
     .populaires h2 {
-        padding-top: 10px;
-        padding-bottom: 10px;
         display: flex;
         justify-content: space-between;
         margin-right: 10%;
+        margin-bottom: 5%;
+        margin-top: 5%;
     }
 
     .carte_populaires {
